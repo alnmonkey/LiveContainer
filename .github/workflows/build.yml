@@ -119,7 +119,7 @@ jobs:
           commit_sha: ${{ env.COMMIT_SHA }}
           commit_msg: ${{ env.COMMIT_MSG }}
         run: |
-          python update_json.py
+          python .github/update_json.py
       - name: Nightly Release
         uses: andelf/nightly-release@v1
         env:
